@@ -15,12 +15,18 @@ public class HashMapTest {
         System.out.println(map.containsValue("12"));
         System.out.println(map.get("admin"));
         Set<Map.Entry<String,String>> entrySet = map.entrySet();
+
         map.remove("test");
         System.out.println(map.size());
         Collection<String> collection = map.values();
         Iterator<String> iterator = collection.iterator();
         while(iterator.hasNext()){
             System.out.println(iterator.next());
+        }
+        Iterator<String> keys = map.keySet().iterator();
+        while (keys.hasNext()){
+            String key=keys.next();
+            System.out.println(map.get(key));
         }
 
     }
