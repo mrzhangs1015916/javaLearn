@@ -8,5 +8,8 @@ public class StringLearn {
         System.out.println(d);
         String e= String.format("my name is %1$.3s,age is %2$s","zsddd","30");
         System.out.println(e);
+        String pro = "nifi.content.max.default";
+        int index = pro.indexOf("nifi.content");
+        System.out.println(pro.substring(index+"nifi.content".length()));
     }
 }
