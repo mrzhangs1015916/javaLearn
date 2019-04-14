@@ -1,10 +1,14 @@
 package mapAndSet;
 
 public class Person implements Comparable<Person> {
-    private int age;
+    private Integer age;
     private String name;
+    public Person(){
+        this.age=100;
+        this.name="admin";
+    }
 
-    public Person(int age, String name) {
+    public Person(Integer age, String name) {
         this.age = age;
         this.name = name;
     }
@@ -13,7 +17,7 @@ public class Person implements Comparable<Person> {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
