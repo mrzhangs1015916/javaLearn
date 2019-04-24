@@ -7,5 +7,6 @@ public class TestFunc {
         Class<TestCreate> c3 = TestCreate.class;
         TestCreate c4 = c3.cast(c2.newInstance());
         System.out.println(c4);
+
     }
 }

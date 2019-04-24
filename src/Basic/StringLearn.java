@@ -11,5 +11,8 @@ public class StringLearn {
         String pro = "nifi.content.max.default";
         int index = pro.indexOf("nifi.content");
         System.out.println(pro.substring(index+"nifi.content".length()));
+        String tmp = "org.nifi.class.show";
+        int i = tmp.lastIndexOf(".");
+        System.out.println(tmp.substring(i+1));
     }
 }
